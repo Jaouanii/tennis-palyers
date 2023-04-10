@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variables */
+:root {
+    --main-bg-color: radial-gradient(circle, rgba(245,239,239,1) 66%, rgba(243,113,4,0.8575630935968137) 90%);
+    --title-color: rgba(243, 135, 4, 0.851);
+    --hover-color: rgb(13, 143, 56);
+  }
+  body{
+      background: var(--main-bg-color);
+      text-align: center;
+      height: 100vh;
+    }
+
+    h1{
+        color: var(--title-color);
+        padding: 5% 0%;
+    }
+
+    
+div{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
+div>p>a{
+    text-decoration: none;
+    color: var(--title-color);
+    padding-bottom: 2%;
+    font-size: 1.4rem;
+    line-height: 2.5;
+
+    
+    /* border: 1px solid black; */
+    
+}
+div>p>a:hover{
+    color: var(--hover-color);
+    font-weight: bold;
+}
+
